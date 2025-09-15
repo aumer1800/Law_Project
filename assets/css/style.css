@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/******************* skeleton animation before image load *************/
+figure {
+    background: linear-gradient(to bottom,
+            #e0e0e0 0%,
+            #f8f8f8 50%,
+            #e0e0e0 100%);
+    background-size: 100% 200%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 0 -100%;
+    }
+}
+
+/***********************  header *************************************/
+.header_navbar {
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.header_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_figure {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.list_items {
+    display: flex;
+    gap: 40px;
+}
+
+.item {
+    list-style-type: none;
+}
+
+.item_name {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1rem,1.5vw,3rem);
+}
+
+/************************ main section ****************************/
+.main_section {
+    position: relative;
+
+}
+
+.main_figure {
+    margin: 0;
+}
+
+.main_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main_figure::after {
+    content: '';
+    /* background: linear-gradient(
+  to bottom,
+  rgba(9, 21, 78, 0.6),
+  rgb(78 74 9 / 60%)
+); */
+    background: linear-gradient(to bottom,
+            rgba(9, 21, 78, 1),
+            /* deep navy blue */
+            rgba(173, 216, 230, 0.3)
+            /* light blue (like #ADD8E6) */
+        );
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.main_content {
+    padding: 12rem 0rem;
+    text-align: center;
+}
+.main_heading{
+    font-size: clamp(1rem,3vw,5rem);
+}
+.main_subheading{
+    font-size: clamp(1.5rem,3.5vw,5.5rem);
+}
+/********************************************  about container ****************/
+.about_section {
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+}
+
+.about_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_content {
+    width: 50%;
+    height: 430px;
+    padding-left: 60px;
+}
+
+.about_heading {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.about_para {
+    overflow-y: scroll;
+    height: 80%;
+    margin: 0;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-right: 10px;
+}
+
+.aboutcard {
+  width: 400px;  /* set desired width */
+  margin: 0 auto; /* center it horizontally */
+  height: 400px;
+  border-radius: 10px;
+}
+.about_wrapper,.about_slide,.about_figure,.about_image{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Target only About section swiper pagination bullets */
+.aboutcard .swiper-pagination-bullet {
+   margin-bottom: 20px;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+}
+/* Make sure swiper container has enough bottom padding */
+.aboutcard {
+  padding-bottom: 30px; /* or whatever height your pagination needs */
+}
+
+/* Position pagination below the images */
+.aboutcard > .swiper-pagination {
+  position: relative; /* remove absolute positioning */
+  bottom: auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/********************************* team section  ***************************/
+.team_section {
+    margin-top: 50px;
+}
+
+.team_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.team_heading {
+    text-align: center;
+}
+
+.team_intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    background-color: black;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.team_figure {
+    width: 35%;
+    height: 250px;
+    margin: 0;
+}
+
+.team_content {
+    width: 65%;
+    padding-left: 40px;
+    color: white;
+}
+
+.team_member,
+.team_person,
+.team_qualification {
+    margin: 8px 0;
+}
+
+.team_member {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.team_person {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.team_qualification {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.team_para {
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-right: 40px;
+}
+
+/*********************************** join us ********************************/
+.join_section {
+    position: relative;
+}
+
+.join_figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.join_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.join_content {
+    text-align: center;
+    padding: 3rem;
+}
+
+.join_heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.join_subheading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/************************************* service section *************************/
+.service_section {
+    border-bottom: 1px solid black;
+}
+
+.service_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service_heading {
+    text-align: center;
+}
+.service_card {
+  width: 250px; /* or 300px depending on design */
+  display: flex;
+  justify-content: center;
+}
+.service_figure {
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.service_image{
+    height: 100%;
+    width: 100%;
+}
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    }
+/* .service_figure:hover .image_overlay{
+    background-color: rgba(199, 198, 198, 0.568);
+} */
+.overlay_heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    margin: 0;
+}
+.service_card_container{
+display: flex;
+}
+.service_wrapper{
+    padding-bottom: 30px;
+}
+/*******************************   news and update section **************************/
+.news_section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news_heading {
+    text-align: center;
+}
+
+.news_card {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card_date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news_description {
+    overflow-y: scroll;
+}
+
+.news_figure {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.news_para {
+    height: 40px;
+}
+
+
+/*************************  acheivement section ****************************/
+
+.acheivement_container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.acheivement_cards_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.acheivement_card{
+    list-style-type: none;
+    width: 20%;
+}
