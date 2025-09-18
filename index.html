@@ -1,11 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Law Associate</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <h1>Yes</h1>
+    <!-- Main section-->
+    <section class="main_section">
+        <!-- header -->
+        <header class="header_navbar">
+            <div class="header_container">
+                <figure class="header_figure">
+                    <!-- <img src="" class="header_image" alt=""> -->
+                </figure>
+                <nav class="navbar_item">
+                    <ul class="list_items">
+                        <li class="item"><a class="item_name" href="#">Home</a></li>
+                        <li class="item"><a class="item_name" href="#">About</a></li>
+                        <li class="item"><a class="item_name" href="./blogs.html">View Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- below header-->
+        <figure class="main_figure">
+            <img class="main_image" src="./assets/images/supreme_court.jpg" alt="">
+        </figure>
+        <figcaption class="main_content">
+            <h1 class="main_heading">Lorem ipsum dolor sit amet.</h1>
+            <h2 class="main_subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsum?</h2>
+        </figcaption>
+    </section>
+    <!--  about section-->
+    <section class="about_section">
+        <div class="about_container">
+
+            <div class="swiper mySwiper aboutcard">
+                <div class="swiper-wrapper about_wrapper">
+                    <div class="swiper-slide about_slide"><figure class="about_figure"><img class="about_image" src="https://picsum.photos/id/1015/600/300" /></figure></div>
+                    <div class="swiper-slide about_slide"><figure class="about_figure"><img class="about_image" src="https://picsum.photos/id/1016/600/300" /></figure></div>
+                    <div class="swiper-slide about_slide"><figure class="about_figure"><img class="about_image" src="https://picsum.photos/id/1018/600/300" /></figure></div>
+                </div>
+
+                <!-- Progressbar pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <figcaption class="about_content">
+                <h1 class="about_heading">About Us</h1>
+                <p class="about_para">Welcome to the distinguished realm of SLA, the premier boutique law firm nestled
+                    at the heart of the
+                    twin cities, Islamabad and Rawalpindi. For over four decades, our firm has been at the forefront of
+                    the legal landscape, specializing in an array of fields including Real Estate, Construction,
+                    Property, and Civil Law. Our firm‘s legacy is carried forward by the venerable Muhammad Ilyas
+                    Sheikh, Advocate Supreme Court, whose profound expertise and 40-year tenure have established him as
+                    a venerated encyclopedia and authority in the legal domain.
+                    <br>
+                    <br>
+                    At the helm of our dynamic team is the young and energetic Barrister Talha Ilyas Sheikh, whose
+                    innovative approach and leadership ensure our firm remains at the cutting edge of legal practice.
+                    Our dedicated team of barristers and advocates is renowned for their prowess in litigating
+                    contentious disputes across various levels, from Civil Courts and tribunals to the Supreme Court of
+                    Pakistan. We take pride in offering comprehensive legal solutions to leading corporations and
+                    individuals alike, bolstered by our expansive network within the legal fraternity.
+                </p>
+            </figcaption>
+        </div>
+
+
+    </section>
+    <!--   Team section  -->
+    <section class="team_section">
+        <div class="team_container">
+            <div class="team_heading">Meet Our Team</div>
+
+            <!-- 1st member-->
+            <div class="team_intro">
+                <figure class="team_figure"></figure>
+                <figcaption class="team_content">
+                    <h2 class="team_member">Founder</h2>
+                    <h1 class="team_person">Aashir</h1>
+                    <h4 class="team_qualification">Advocate</h4>
+                    <p class='team_para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero molestiae iusto
+                        fuga, consequatur temporibus eum magnam accusantium ratione consectetur qui culpa quo ducimus
+                        error tenetur laudantium a ipsum at beatae. Earum, minus exercitationem. Illum ratione, quasi
+                        non facere eum perferendis dicta in? Qui quos eos laudantium nam, enim molestiae. Possimus!</p>
+                </figcaption>
+            </div>
+
+
+            <!-- 2nd member-->
+            <div class="team_intro">
+                <figure class="team_figure"></figure>
+                <figcaption class="team_content">
+                    <h2 class="team_member">Founder</h2>
+                    <h1 class="team_person">Aashir</h1>
+                    <h4 class="team_qualification">Advocate</h4>
+                    <p class='team_para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero molestiae iusto
+                        fuga, consequatur temporibus eum magnam accusantium ratione consectetur qui culpa quo ducimus
+                        error tenetur laudantium a ipsum at beatae. Earum, minus exercitationem. Illum ratione, quasi
+                        non facere eum perferendis dicta in? Qui quos eos laudantium nam, enim molestiae. Possimus!</p>
+                </figcaption>
+            </div>
+        </div>
+    </section>
+
+    <!-- join us section-->
+    <section class="join_section">
+        <figure class="join_figure">
+            <img class="join_image" src="./assets/images/join.webp" alt="">
+        </figure>
+        <div class="join_content">
+            <h1 class="join_heading">
+                Join Us At SLA
+            </h1>
+            <h2 class="join_subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque minus fuga
+                aut deleniti impedit culpa quia blanditiis excepturi vero?</h2>
+        </div>
+    </section>
+
+    <!-- service section -->
+    <section class="service_section">
+        <div class="service_container">
+            <div class="service_heading">Our Services</div>
+
+
+            <div class="swiper mySwiper servicecard">
+                <div class="swiper-wrapper service_wrapper">
+                    <!-- card 1-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature1.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image1</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <!-- card 2-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature2.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image2</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+
+                    <!-- card 3-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature3.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image3</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+
+                    <!-- card 4-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature4.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image4</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+
+                    <!-- card 5-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature5.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image5</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+
+                    <!-- card 6-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature6.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image6</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+
+                    <!-- card 7-->
+                    <div class="service_card swiper-slide">
+                        <figure class="service_figure ">
+                            <img class="service_image" src="./assets/images/nature7.webp" alt="">
+                            <div class="image_overlay">
+                                <h3 class="overlay_heading">Image7</h3>
+                            </div>
+                        </figure>
+                    </div>
+
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- News section-->
+    <section class="news_section">
+        <div class="news_container">
+            <div class="news_heading">News & Updates</div>
+
+            <div class="news_card_container">
+                <!-- card 1 -->
+                <div class="news_card">
+                    <h2 class="card_heading">Lorem ipsum dolor sit amet.</h2>
+                    <div class="card_date">
+                        <h3>2/1/2020</h3>
+                        <h3>Person Name</h3>
+                    </div>
+                    <div class="news_description">
+                        <figure class="news_figure"></figure>
+                        <figcaption class="news_content">
+                            <p class="news_para">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt impedit fugiat recusandae
+                                reiciendis nemo ad consequatur libero placeat necessitatibus ab fugit veniam neque
+                                officia ut explicabo repudiandae, iure distinctio alias sed facilis ratione ipsum ipsam
+                                vel? Vitae consequatur libero, possimus veniam deleniti rem, ipsam ipsa ab porro
+                                laudantium quam voluptate, eos distinctio beatae perferendis aliquid laboriosam
+                                voluptatum voluptatem asperiores! Dicta, impedit vero! Voluptatibus perferendis maxime
+                                minima incidunt optio assumenda sequi blanditiis provident illo non, beatae, quibusdam
+                                sunt ipsam adipisci? Facilis officia adipisci quia excepturi asperiores in. Ea sed
+                                magnam itaque nam labore consequuntur, ullam numquam laborum similique, dolore quo
+                                explicabo?
+                            </p>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Acheivements -->
+    <section class="acheivement_section">
+        <div class="acheivement_container">
+            <h1>Our Acheivements</h1>
+            <ul class="acheivement_cards_container">
+                <li class="acheivement_card">
+                    <i></i>
+                    <h1 class="acheivement_card_heading">40+</h1>
+                    <h1 class="acheivement_card_subheading">Years of Experience</h1>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
